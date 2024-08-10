@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.601dd6a6.css",
+    "main.js": "/static/js/main.78f9c490.js",
+    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
+    "index.html": "/index.html",
+    "static/media/Matthew_Carpenter_Resume.pdf": "/static/media/Matthew_Carpenter_Resume.31d6cfe0d16ae931b73c.pdf",
+    "main.601dd6a6.css.map": "/static/css/main.601dd6a6.css.map",
+    "main.78f9c490.js.map": "/static/js/main.78f9c490.js.map",
+    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.601dd6a6.css",
+    "static/js/main.78f9c490.js"
+  ]
+}
