@@ -1,0 +1,268 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #00d9ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+/* Layout */
+header, footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgba(0, 217, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Sections */
+main {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d9ff;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff6f61;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* About Me */
+#about-me img {
+    border-radius: 50%;
+    max-width: 180px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-me img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+#about-me p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #dcdcdc;
+}
+
+/* Portfolio */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00d9ff;
+}
+
+.project a {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ff6f61;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project a:hover {
+    background: #ff4757;
+    transform: scale(1.1);
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #dcdcdc;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    outline: none;
+}
+
+form button {
+    background-color: #00d9ff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+}
+
+.error {
+    color: #ff6f61;
+    font-size: 0.9rem;
+    margin-top: -15px;
+}
+
+/* Resume */
+#resume ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resume ul li {
+    background-color: #007bff;
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#resume ul li:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #00d9ff;
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #dcdcdc;
+}
+

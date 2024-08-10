@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Matthew_Carpenter_Resume.pdf";
 
 function Resume() {
   const proficiencies = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
@@ -7,7 +7,7 @@ function Resume() {
   return (
     <section id="resume">
       <h2>Resume</h2>
-      <a href={resume} download>
+      <a href={resume} download="YourName_Resume.pdf">
         Download My Resume
       </a>
       <h3>Proficiencies</h3>
