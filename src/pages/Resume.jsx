@@ -2,7 +2,15 @@ import React from "react";
 import resume from "../assets/Matthew_Carpenter_Resume.pdf";
 
 function Resume() {
-  const proficiencies = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
+  const proficiencies = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "MongoDB",
+    "Express.js",
+    "React",
+    "Node.js",
+  ];
 
   return (
     <section id="resume">
